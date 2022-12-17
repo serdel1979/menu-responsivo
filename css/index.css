@@ -1,0 +1,41 @@
+.link-menu{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.link-menu:hover{
+    background: gray;
+}
+
+nav{
+  padding: 10px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-boton{
+    background: black;
+    color: gray;
+    padding: 10px;
+    border: 2px solid white;
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    nav{
+       flex-direction: column; 
+    }
+    .link-menu{
+        margin: 10px 0 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .oculto{
+        display: none;
+    }
+}
